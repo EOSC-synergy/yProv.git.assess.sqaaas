@@ -1,0 +1,72 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.0.1
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/HPCI-Lab/yProv:
+      branch: main
+      repo: https://github.com/HPCI-Lab/yProv.git
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/HPCI-Lab/yProv git:
+        commands:
+        - /usr/bin/env sh .sqa/script.freaky-sangria-seahorse.sh
+        container: qc.acc_cranky-razzmatazz-ferret
+  QC.Doc:
+    repos:
+      github.com/HPCI-Lab/yProv find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.tacky-ivory-flounder.sh
+        container: qc.doc_muzzy-corn-raccoon
+      github.com/HPCI-Lab/yProv git:
+        commands:
+        - /usr/bin/env sh .sqa/script.goopy-salmon-vole.sh
+        container: qc.doc_chummy-aquamarine-grouse
+      github.com/HPCI-Lab/yProv markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.zippy-malachite-budgerigar.sh
+        container: qc.doc_hazy-ivory-fox
+  QC.Lic:
+    repos:
+      github.com/HPCI-Lab/yProv licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.snazzy-sangria-mist.sh
+        container: qc.lic_frumpy-aqua-cockroach
+  QC.Sec:
+    repos:
+      github.com/HPCI-Lab/yProv bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.freaky-coral-bandicoot.sh
+        container: qc.sec_nippy-indigo-llama
+  QC.Sty:
+    repos:
+      github.com/HPCI-Lab/yProv flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.foggy-flax-starfish.sh
+        container: qc.sty_squirrely-apricot-hummingbird
+      github.com/HPCI-Lab/yProv hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.crappy-chestnut-setter.sh
+        container: qc.sty_sloppy-orchid-rabbit
+      github.com/HPCI-Lab/yProv jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.randy-brown-husky.sh
+        container: qc.sty_seedy-harlequin-collie
+  QC.Uni:
+    repos:
+      github.com/HPCI-Lab/yProv pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.zippy-grey-tzu.sh
+        container: qc.uni_jumpy-persimmon-serval
+  QC.Ver:
+    repos:
+      github.com/HPCI-Lab/yProv get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.woozy-taupe-insect.sh
+        container: qc.ver_gummy-persimmon-turkey
+timeout: 5400
