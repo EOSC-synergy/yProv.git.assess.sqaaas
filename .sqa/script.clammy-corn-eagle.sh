@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    pytest  --json-report  --json-report-indent 4
+    docker run --privileged -v /var/run/docker.sock:/var/run/docker.sock --rm unittests:v1.0
 )
