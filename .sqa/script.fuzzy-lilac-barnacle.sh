@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    mdl --json .
+    pytest  --json-report  --json-report-indent 4
 )

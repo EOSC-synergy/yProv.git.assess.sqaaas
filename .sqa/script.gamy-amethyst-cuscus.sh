@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    bandit -f json --quiet  --confidence-level high --severity-level high --recursive .
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
 )

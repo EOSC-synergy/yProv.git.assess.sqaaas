@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    docker run --privileged -v /var/run/docker.sock:/var/run/docker.sock --rm unittests:v1.0
+    licensee detect . --confidence 60 --json 
 )
