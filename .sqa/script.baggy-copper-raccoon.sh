@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    licensee detect . --confidence 60 --json 
+    sqaaas_yprov:v1.0
 )
