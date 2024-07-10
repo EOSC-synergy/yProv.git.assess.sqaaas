@@ -5,7 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    make torch-env-cpu&&
-    make tensorflow-env-cpu&&
-    .venv-pytorch/bin/pytest -v ./tests/ -m "not slurm and not memory_heavy"
+    licensee detect . --confidence 60 --json
 )
