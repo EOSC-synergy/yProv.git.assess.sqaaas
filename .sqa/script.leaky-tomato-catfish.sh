@@ -10,6 +10,7 @@ cd github.com/HPCI-Lab/yProv &&
     docker rm web&&
     docker stop db&&
     docker rm db&&
-    docker network disconnect yprov_net "$CONTAINER_ID"&&
-    docker network rm yprov_net
+    docker volume rm neo4j_data&&
+    docker volume rm neo4j_logs&&
+    docker volume rm yprov_data
 )
