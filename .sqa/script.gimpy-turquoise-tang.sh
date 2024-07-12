@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    get_git_tags.py
+    git rev-parse --is-inside-work-tree
 )

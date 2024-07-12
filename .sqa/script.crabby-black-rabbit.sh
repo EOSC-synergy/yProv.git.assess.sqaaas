@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    mdl --json  .
+    licensee detect . --confidence 60 --json
 )

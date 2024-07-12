@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    hadolint Dockerfile --failure-threshold error
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive .
 )
