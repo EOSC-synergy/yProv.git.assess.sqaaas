@@ -5,5 +5,11 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    :
+    pytest&&
+    docker stop web&&
+    docker rm web&&
+    docker stop db&&
+    docker rm db&&
+    docker network disconnect yprov_net "$CONTAINER_ID"&&
+    docker network rm yprov_net
 )
