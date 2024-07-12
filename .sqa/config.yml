@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/HPCI-Lab/yProv git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-magenta-meerkat.sh
-        container: qc.acc_flimsy-vermilion-kudu
+        - /usr/bin/env sh .sqa/script.squirrely-purple-angelfish.sh
+        container: qc.acc_stinky-bronze-rabbit
   QC.Doc:
     repos:
       github.com/HPCI-Lab/yProv find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-gamboge-buzzard.sh
-        container: qc.doc_pretty-harlequin-dormouse
+        - /usr/bin/env sh .sqa/script.lumpy-magnolia-russel.sh
+        container: qc.doc_dorky-aquamarine-ocelot
       github.com/HPCI-Lab/yProv git:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-sepia-emu.sh
-        container: qc.doc_snappy-mauve-frise
+        - /usr/bin/env sh .sqa/script.wiggy-azure-quetzal.sh
+        container: qc.doc_woolly-beige-kangaroo
       github.com/HPCI-Lab/yProv markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-fuchsia-spitz.sh
-        container: qc.doc_breezy-denim-dogfish
+        - /usr/bin/env sh .sqa/script.snippy-cardinal-squirt.sh
+        container: qc.doc_nerdy-brown-cockroach
   QC.Lic:
     repos:
       github.com/HPCI-Lab/yProv licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-celadon-camel.sh
-        container: qc.lic_cozy-crimson-turkey
+        - /usr/bin/env sh .sqa/script.sunny-carmine-tzu.sh
+        container: qc.lic_stinky-eggplant-dachsbracke
   QC.Sec:
     repos:
       github.com/HPCI-Lab/yProv bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-mauve-spaniel.sh
-        container: qc.sec_cloudy-emerald-civet
+        - /usr/bin/env sh .sqa/script.clammy-purple-deer.sh
+        container: qc.sec_dorky-coral-catfish
   QC.Sty:
     repos:
       github.com/HPCI-Lab/yProv flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-ochre-foxhound.sh
-        container: qc.sty_chummy-brown-kudu
+        - /usr/bin/env sh .sqa/script.tasty-cerulean-uakari.sh
+        container: qc.sty_scaly-seashell-jackal
       github.com/HPCI-Lab/yProv hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-apricot-balinese.sh
-        container: qc.sty_woozy-sepia-civet
+        - /usr/bin/env sh .sqa/script.flimsy-cardinal-yak.sh
+        container: qc.sty_woolly-tomato-toad
       github.com/HPCI-Lab/yProv jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-green-husky.sh
-        container: qc.sty_hazy-tan-rattlesnake
+        - /usr/bin/env sh .sqa/script.gummy-pumpkin-stingray.sh
+        container: qc.sty_squeaky-ochre-iguana
   QC.Uni:
     repos:
       github.com/HPCI-Lab/yProv commands:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-tomato-catfish.sh
-        container: qc.uni_stealthy-harlequin-quoll
+        - /usr/bin/env sh .sqa/script.zippy-champagne-sponge.sh
+        container: qc.uni_frumpy-olivine-hornet
   QC.Ver:
     repos:
       github.com/HPCI-Lab/yProv get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-heliotrope-terrier.sh
-        container: qc.ver_hasty-emerald-albatross
+        - /usr/bin/env sh .sqa/script.smelly-heliotrope-dogfish.sh
+        container: qc.ver_breezy-tan-weasel
 timeout: 5400
