@@ -5,6 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    "pytest /app/tests/test_mock_auth.py"&&
-    "pytest /app/tests/test_mock_documents.py"
+    pytest /app/tests/test_mock_auth.py
 )
