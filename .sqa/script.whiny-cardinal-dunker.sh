@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    pytest /app/tests/test_mock_auth.py
+    mdl --json .
 )
