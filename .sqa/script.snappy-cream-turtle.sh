@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    pytest /app/tests/test_auth.py
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
 )

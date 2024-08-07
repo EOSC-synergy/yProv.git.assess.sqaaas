@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    mdl --json .
+    git rev-parse --is-inside-work-tree 
 )
