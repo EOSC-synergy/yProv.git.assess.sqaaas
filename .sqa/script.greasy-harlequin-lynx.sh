@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    pytest /app/tests/test_auth.py
+    pytest /app/tests
 )
