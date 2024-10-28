@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    hadolint Dockerfile hpci-yprov:mocktest/Dockerfile hpci-yprov:1.3/Dockerfile --failure-threshold error
+    hadolint Dockerfile hpci-yprov:1.3/Dockerfile hpci-yprov:mocktest/Dockerfile --failure-threshold error
 )
