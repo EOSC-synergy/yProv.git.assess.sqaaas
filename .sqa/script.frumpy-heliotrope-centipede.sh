@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    licensee detect . --confidence 60 --json
+    pytest /app/tests/test_mock_auth.py /app/tests/test_mock_documents.py
 )
